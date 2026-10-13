@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Swift Fix Mobile Auto LLC – Consumer Information & Public Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Consumer information, public records, BBB rating, and business history related to Swift Fix Mobile Auto LLC (Jordan James Brunner), including prior AZ Mobile Auto Repair branding and verification resources." />
+  <meta name="keywords" content="Swift Fix Mobile Auto LLC, AZ Mobile Auto Repair, Jordan James Brunner, consumer alert, auto repair Arizona, public records, BBB rating" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Swift Fix Mobile Auto LLC – Consumer Information & Public Records" />
+  <meta property="og:description" content="Neutral consumer-protection information based on public records, BBB data, and official filings." />
+  <meta property="og:type" content="website" />
+
+  <!-- Basic styling -->
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --accent: #1f6feb;
+      --accent-soft: #e3edff;
+      --text-main: #1b1f24;
+      --text-soft: #4b5563;
+      --border-soft: #d1d5db;
+      --danger: #b91c1c;
+      --danger-soft: #fee2e2;
+      --success-soft: #dcfce7;
+      --muted-bg: #f3f4f6;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      margin-bottom: 1.5rem;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+    }
+
+    .site-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      margin: 0;
+    }
+
+    .banner {
+      margin: 1.5rem 0;
+      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      border: 1px solid var(--danger);
+      background: linear-gradient(135deg, var(--danger-soft), #fff);
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .banner-icon {
+      font-size: 1.4rem;
+    }
+
+    .banner-title {
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .banner-text {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 0.75rem;
+      border: 1px solid var(--border-soft);
+      padding: 1rem 1.25rem;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: var(--muted-bg);
+      color: var(--text-soft);
+    }
+
+    .card-body {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+    }
+
+    .card-body p {
+      margin: 0.25rem 0;
+    }
+
+    .list {
+      margin: 0.5rem 0 0.25rem;
+      padding-left: 1.1rem;
+      font-size: 0.95rem;
+    }
+
+    .list li {
+      margin: 0.15rem 0;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .muted {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .danger-box {
+      background: var(--danger-soft);
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .success-box {
+      background: var(--success-soft);
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .link-list {
+      margin: 0.4rem 0 0.2rem;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+
+    .link-list li {
+      margin: 0.15rem 0;
+    }
+
+    .link-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    .screenshot-note {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-soft);
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    footer p {
+      margin: 0.25rem 0;
+    }
+
+    code {
+      font-size: 0.85rem;
+      background: var(--muted-bg);
+      padding: 0.1rem 0.25rem;
+      border-radius: 0.25rem;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Swift Fix Mobile Auto LLC – Consumer Information & Public Records",
+    "description": "Neutral consumer-protection information based on public records, BBB data, and official filings related to Swift Fix Mobile Auto LLC and prior AZ Mobile Auto Repair branding.",
+    "about": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Swift Fix Mobile Auto LLC",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "AZ",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "AZ Mobile Auto Repair",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "AZ",
+          "addressCountry": "US"
+        }
+      }
+    ],
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Consumer Protection – Auto Repair Arizona"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1 class="site-title">Swift Fix Mobile Auto LLC – Consumer Information</h1>
+      <p class="site-subtitle">
+        Neutral, fact-based overview of public records, business history, and verification resources for consumers seeking auto repair services in Arizona.
+      </p>
+    </header>
+
+    <!-- Warning banner -->
+    <section class="banner" aria-label="Consumer information banner">
+      <div class="banner-icon">⚠️</div>
+      <div>
+        <div class="banner-title">Consumer Information & Business History Notice</div>
+        <div class="banner-text">
+          This page provides neutral, public-record-based information about
+          <strong>Swift Fix Mobile Auto LLC</strong> and related business history, including prior use of the name
+          <strong>AZ Mobile Auto Repair</strong>. The purpose is to help consumers make informed decisions and to
+          reduce confusion between similarly named businesses.
+        </div>
+      </div>
+    </section>
+
+    <!-- Main grid: public records + ratings -->
+    <section class="grid">
+      <!-- Left column: public records & lineage -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">Business Registration & Public Records</div>
+          <div class="card-tag">Public record summary</div>
+        </div>
+        <div class="card-body">
+          <p>
+            The information below is based on publicly available filings and registry data from Arizona state
+            agencies and business directories.
+          </p>
+
+          <ul class="list">
+            <li><strong>Entity:</strong> Swift Fix Mobile Auto LLC</li>
+            <li><strong>Type:</strong> Limited Liability Company (LLC)</li>
+            <li><strong>Jurisdiction:</strong> State of Arizona</li>
+            <li><strong>Organizer / Member:</strong> Jordan James Brunner (per filing documents)</li>
+            <li><strong>Statutory Agent:</strong> As listed in the Arizona Corporation Commission filing</li>
+          </ul>
+
+          <div class="highlight">
+            <strong>Business lineage note:</strong><br />
+            Public records and historical search results indicate prior use of the name
+            <strong>AZ Mobile Auto Repair</strong> in connection with mobile auto repair services in Arizona.
+            Consumers may encounter both names in search results or historical references.
+          </div>
+
+          <p class="section-title">Official registry links</p>
+          <ul class="link-list">
+            <li>
+              <a href="#" aria-label="Arizona Corporation Commission business search (placeholder)">
+                Arizona Corporation Commission – Business Search (Swift Fix Mobile Auto LLC)
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Historical AZ Mobile Auto Repair listing (placeholder)">
+                Historical listing – AZ Mobile Auto Repair (if available)
+              </a>
+            </li>
+          </ul>
+
+          <p class="screenshot-note">
+            Screenshot placeholders: you can insert images here showing the LLC filing and historical search results
+            (e.g., <code>img/acc-filing.png</code>, <code>img/az-mobile-search.png</code>).
+          </p>
+        </div>
+      </article>
+
+      <!-- Right column: BBB / AG / complaints -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">Ratings, Complaints & Oversight Channels</div>
+          <div class="card-tag">Consumer reference</div>
+        </div>
+        <div class="card-body">
+          <p>
+            Before hiring any auto repair provider, consumers are encouraged to review independent ratings and
+            complaint histories from established oversight organizations.
+          </p>
+
+          <p class="section-title">Better Business Bureau (BBB)</p>
+          <div class="danger-box">
+            <strong>Note:</strong> BBB ratings and complaint counts can change over time. Consumers should review the
+            current BBB profile for the most up-to-date information on any business, including Swift Fix Mobile Auto
+            LLC or similarly named entities.
+          </div>
+          <ul class="link-list">
+            <li>
+              <a href="#" aria-label="BBB search for Swift Fix Mobile Auto LLC (placeholder)">
+                BBB search – Swift Fix Mobile Auto LLC
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="BBB search for AZ Mobile Auto Repair (placeholder)">
+                BBB search – AZ Mobile Auto Repair (historical or related entries)
+              </a>
+            </li>
+          </ul>
+
+          <p class="section-title">Arizona Attorney General – Consumer Complaints</p>
+          <p>
+            The Arizona Attorney General’s Office accepts consumer complaints related to auto repair, billing,
+            misrepresentation, and other marketplace issues.
+          </p>
+          <ul class="link-list">
+            <li>
+              <a href="#" aria-label="Arizona Attorney General consumer complaint portal (placeholder)">
+                Arizona Attorney General – Consumer Complaint Portal
+              </a>
+            </li>
+          </ul>
+
+          <p class="section-title">Additional oversight resources</p>
+          <ul class="link-list">
+            <li>
+              <a href="#" aria-label="Arizona Corporation Commission complaint or inquiry page (placeholder)">
+                Arizona Corporation Commission – Business Inquiry / Complaint
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Local city or county business licensing office (placeholder)">
+                Local city / county business licensing office (for license verification)
+              </a>
+            </li>
+          </ul>
+
+          <p class="screenshot-note">
+            Screenshot placeholders: BBB rating page, AG complaint portal, and any relevant oversight pages can be
+            added here (e.g., <code>img/bbb-profile.png</code>, <code>img/ag-complaint.png</code>).
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Name piggybacking explanation -->
+    <section class="card">
+      <div class="card-header">
+        <div class="card-title">Business Name Similarity & Consumer Confusion</div>
+        <div class="card-tag">Neutral explanation</div>
+      </div>
+      <div class="card-body">
+        <p>
+          In some cases, new businesses adopt names that are identical or very similar to existing businesses. This
+          can create confusion for consumers, especially when searching online or reading reviews.
+        </p>
+
+        <p>
+          When multiple businesses share or closely mirror a name such as <strong>“Swift Fix Mobile Auto”</strong> or
+          <strong>“AZ Mobile Auto Repair”</strong>, search results, map listings, and review platforms may display
+          overlapping information. Complaints, ratings, or praise intended for one business can appear alongside
+          another with a similar name.
+        </p>
+
+        <div class="highlight">
+          <strong>Consumer guidance:</strong><br />
+          Consumers are encouraged to verify:
+          <ul class="list">
+            <li>The exact legal business name as registered with the state</li>
+            <li>The physical or mailing address of the business</li>
+            <li>The owner or managing member listed in public filings</li>
+            <li>Whether reviews and complaints clearly match the specific business they intend to hire</li>
+          </ul>
+        </div>
+
+        <p class="screenshot-note">
+          Screenshot placeholders: side-by-side search results showing similarly named businesses can be added here
+          (e.g., <code>img/search-comparison.png</code>).
+        </p>
+      </div>
+    </section>
+
+    <!-- Verify before you hire checklist -->
+    <section class="card">
+      <div class="card-header">
+        <div class="card-title">“Verify Before You Hire” – Auto Repair Checklist</div>
+        <div class="card-tag">Consumer checklist</div>
+      </div>
+      <div class="card-body">
+        <p>
+          The following checklist is intended to help consumers reduce risk and confusion when selecting a mobile
+          auto repair provider or any auto service business.
+        </p>
+
+        <ul class="list">
+          <li><strong>Confirm the legal name:</strong> Ask for the exact legal business name and compare it to state business registry records.</li>
+          <li><strong>Check the address:</strong> Verify that the address on invoices, websites, and registry filings match.</li>
+          <li><strong>Review ownership information:</strong> Look up the owner or managing member in public filings and confirm consistency.</li>
+          <li><strong>Search multiple sources:</strong> Use search engines, BBB, and state registries to cross-check the business name and owner.</li>
+          <li><strong>Read recent reviews:</strong> Focus on recent, detailed reviews that clearly describe services, locations, and dates.</li>
+          <li><strong>Ask for written estimates:</strong> Request a written estimate and keep copies of all invoices and communications.</li>
+          <li><strong>Verify licensing (if applicable):</strong> Confirm any required local or state licenses for auto repair work.</li>
+          <li><strong>Know your complaint options:</strong> Familiarize yourself with BBB, AG, and local consumer protection channels before hiring.</li>
+        </ul>
+
+        <div class="success-box">
+          <strong>Reminder:</strong><br />
+          This checklist is general consumer guidance and is not specific to any single business. It is intended to
+          help consumers make informed decisions and to reduce confusion when multiple businesses share similar names.
+        </div>
+      </div>
+    </section>
+
+    <!-- Context & neutrality statement -->
+    <section class="card">
+      <div class="card-header">
+        <div class="card-title">Context, Scope & Neutrality Statement</div>
+        <div class="card-tag">Important notice</div>
+      </div>
+      <div class="card-body">
+        <p>
+          This page is intended as a neutral, consumer-protection resource. It summarizes public records, registry
+          data, and general guidance for evaluating auto repair businesses in Arizona. It does not make legal
+          conclusions, does not allege criminal conduct, and does not provide legal advice.
+        </p>
+
+        <p>
+          All references to <strong>Swift Fix Mobile Auto LLC</strong>, <strong>AZ Mobile Auto Repair</strong>, or
+          any individual are based on publicly available information at the time of compilation. Consumers should
+          independently verify current status, ownership, and any changes to business operations.
+        </p>
+
+        <p>
+          If any business owner, consumer, or agency identifies updated information or corrections, they are
+          encouraged to rely on official state records and oversight bodies as the authoritative source.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        This page is provided as a consumer information resource based on public records and neutral guidance. It is
+        not affiliated with any government agency, law firm, or regulatory body.
+      </p>
+      <p>
+        For official information, consumers should consult the Arizona Corporation Commission, the Arizona Attorney
+        General’s Office, the Better Business Bureau, and local licensing authorities.
+      </p>
+      <p class="muted">
+        Last updated: <span>2026-10-13</span> • Host: GitHub Pages (static site)
+      </p>
+    </footer>
+  </div>
+</body>
+  </html>
