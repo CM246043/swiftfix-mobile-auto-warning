@@ -1,530 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Swift Fix Mobile Auto LLC – Consumer Information & Public Records</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Consumer information, public records, BBB rating, and business history related to Swift Fix Mobile Auto LLC (Jordan James Brunner), including prior AZ Mobile Aut[...]"/>
-  <meta name="keywords" content="Swift Fix Mobile Auto LLC, AZ Mobile Auto Repair, Jordan James Brunner, consumer alert, auto repair Arizona, public records, BBB rating" />
-  <meta name="robots" content="index,follow" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Swift Fix Mobile Auto LLC – Consumer Information & Public Records" />
-  <meta property="og:description" content="Neutral consumer-protection information based on public records, BBB data, and official filings." />
-  <meta property="og:type" content="website" />
-
-  <!-- Basic styling -->
-  <style>
-    :root {
-      --bg: #f5f7fa;
-      --card-bg: #ffffff;
-      --accent: #1f6feb;
-      --accent-soft: #e3edff;
-      --text-main: #1b1f24;
-      --text-soft: #4b5563;
-      --border-soft: #d1d5db;
-      --danger: #b91c1c;
-      --danger-soft: #fee2e2;
-      --success-soft: #dcfce7;
-      --muted-bg: #f3f4f6;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: var(--font-main);
-      background: var(--bg);
-      color: var(--text-main);
-      line-height: 1.5;
-    }
-
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-
-    header {
-      margin-bottom: 1.5rem;
-    }
-
-    .site-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin: 0 0 0.25rem;
-    }
-
-    .site-subtitle {
-      font-size: 0.95rem;
-      color: var(--text-soft);
-      margin: 0;
-    }
-
-    .banner {
-      margin: 1.5rem 0;
-      padding: 1rem 1.25rem;
-      border-radius: 0.75rem;
-      border: 1px solid var(--danger);
-      background: linear-gradient(135deg, var(--danger-soft), #fff);
-      display: flex;
-      gap: 0.75rem;
-      align-items: flex-start;
-    }
-
-    .banner-icon {
-      font-size: 1.4rem;
-    }
-
-    .banner-title {
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-
-    .banner-text {
-      font-size: 0.95rem;
-      color: var(--text-soft);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
-      gap: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 0.75rem;
-      border: 1px solid var(--border-soft);
-      padding: 1rem 1.25rem;
-      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .card-tag {
-      font-size: 0.75rem;
-      padding: 0.15rem 0.5rem;
-      border-radius: 999px;
-      background: var(--muted-bg);
-      color: var(--text-soft);
-    }
-
-    .card-body {
-      font-size: 0.95rem;
-      color: var(--text-soft);
-    }
-
-    .card-body p {
-      margin: 0.25rem 0;
-    }
-
-    .list {
-      margin: 0.5rem 0 0.25rem;
-      padding-left: 1.1rem;
-      font-size: 0.95rem;
-    }
-
-    .list li {
-      margin: 0.15rem 0;
-    }
-
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin: 1.25rem 0 0.5rem;
-    }
-
-    .muted {
-      font-size: 0.85rem;
-      color: var(--text-soft);
-    }
-
-    .highlight {
-      background: var(--accent-soft);
-      border-radius: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .danger-box {
-      background: var(--danger-soft);
-      border-radius: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .success-box {
-      background: var(--success-soft);
-      border-radius: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .link-list {
-      margin: 0.4rem 0 0.2rem;
-      padding-left: 1.1rem;
-      font-size: 0.9rem;
-    }
-
-    .link-list li {
-      margin: 0.15rem 0;
-    }
-
-    .link-list a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .link-list a:hover {
-      text-decoration: underline;
-    }
-
-    .screenshot-note {
-      font-size: 0.85rem;
-      color: var(--text-soft);
-      margin-top: 0.4rem;
-      font-style: italic;
-    }
-
-    footer {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-soft);
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
-
-    footer p {
-      margin: 0.25rem 0;
-    }
-
-    code {
-      font-size: 0.85rem;
-      background: var(--muted-bg);
-      padding: 0.1rem 0.25rem;
-      border-radius: 0.25rem;
-    }
-  </style>
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Swift Fix Mobile Auto LLC – Consumer Information & Public Records",
-    "description": "Neutral consumer-protection information based on public records, BBB data, and official filings related to Swift Fix Mobile Auto LLC and prior AZ Mobile Auto Repair branding.[...]"
-    "about": [
-      {
-        "@type": "LocalBusiness",
-        "name": "Swift Fix Mobile Auto LLC",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "AZ",
-          "addressCountry": "US"
-        }
-      },
-      {
-        "@type": "LocalBusiness",
-        "name": "AZ Mobile Auto Repair",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "AZ",
-          "addressCountry": "US"
-        }
-      }
-    ],
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Consumer Protection – Auto Repair Arizona"
-    }
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swift Fix Mobile Auto — Consumer Warning | Public Records &amp; Reviews</title>
+<meta name="description" content="Swift Fix Mobile Auto LLC (Queen Creek / San Tan Valley, AZ) — consumer warning compiled from public records: court cases, police reports, BBB rating history and reviews for owner Jordan Brunner.">
+<link rel="canonical" href="https://cm246043.github.io/swiftfix-mobile-auto-warning/">
+<meta property="og:title" content="Swift Fix Mobile Auto — Consumer Warning">
+<meta property="og:description" content="Public records, court history, BBB rating history and reviews for Swift Fix Mobile Auto LLC and owner Jordan Brunner (formerly AZ Mobile Auto Repair).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cm246043.github.io/swiftfix-mobile-auto-warning/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Swift Fix Mobile Auto — Consumer Warning","url":"https://cm246043.github.io/swiftfix-mobile-auto-warning/","about":{"@type":"AutoRepair","name":"Swift Fix Mobile Auto LLC","address":{"@type":"PostalAddress","streetAddress":"776 W Trellis Rd","addressLocality":"Queen Creek","addressRegion":"AZ","postalCode":"85140"},"telephone":"(520) 683-4078"}}
+</script>
+<style>
+  body{font-family:Georgia,'Times New Roman',serif;margin:0;color:#1a1a1a;background:#f7f5f0;line-height:1.6}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 18px 60px}
+  header{border-bottom:4px solid #b3001b;padding-bottom:14px;margin-bottom:22px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 6px}
+  h2{font-size:1.35rem;margin-top:36px;border-bottom:2px solid #d8d2c4;padding-bottom:4px}
+  .alert{background:#b3001b;color:#fff;padding:12px 16px;border-radius:6px;font-weight:bold}
+  .facts{background:#fff;border:1px solid #d8d2c4;border-radius:6px;padding:14px 18px}
+  .facts td{padding:3px 14px 3px 0;vertical-align:top}
+  .facts td:first-child{font-weight:bold;white-space:nowrap}
+  figure{margin:22px 0;background:#fff;border:1px solid #d8d2c4;border-radius:6px;padding:12px}
+  figure img{max-width:100%;height:auto;display:block;margin:0 auto}
+  figcaption{font-size:.9rem;color:#555;margin-top:8px;text-align:center}
+  .small{font-size:.92rem;color:#444}
+  ul{padding-left:22px}
+  li{margin-bottom:8px}
+  footer{margin-top:44px;border-top:2px solid #d8d2c4;padding-top:14px;font-size:.9rem;color:#555}
+  a{color:#7a0013}
+</style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <h1 class="site-title">Swift Fix Mobile Auto LLC – Consumer Information</h1>
-      <p class="site-subtitle">
-        Neutral, fact-based overview of public records, business history, and verification resources for consumers seeking auto repair services in Arizona.
-      </p>
-    </header>
+<div class="wrap">
 
-    <!-- Warning banner -->
-    <section class="banner" aria-label="Consumer information banner">
-      <div class="banner-icon">⚠️</div>
-      <div>
-        <div class="banner-title">Consumer Information & Business History Notice</div>
-        <div class="banner-text">
-          This page provides neutral, public-record-based information about
-          <strong>Swift Fix Mobile Auto LLC</strong> and related business history, including prior use of the name
-          <strong>AZ Mobile Auto Repair</strong>. The purpose is to help consumers make informed decisions and to
-          reduce confusion between similarly named businesses.
-        </div>
-      </div>
-    </section>
+<header>
+  <h1>Swift Fix Mobile Auto LLC — Consumer Warning</h1>
+  <p class="small">Queen Creek / San Tan Valley, Arizona &middot; Compiled entirely from public records &middot; Last updated October 21, 2026</p>
+</header>
 
-    <!-- Main grid: public records + ratings -->
-    <section class="grid">
-      <!-- Left column: public records & lineage -->
-      <article class="card">
-        <div class="card-header">
-          <div class="card-title">Business Registration & Public Records</div>
-          <div class="card-tag">Public record summary</div>
-        </div>
-        <div class="card-body">
-          <p>
-            The information below is based on publicly available filings and registry data from Arizona state
-            agencies and business directories.
-          </p>
+<p class="alert">Before you hand your keys — or your money — to Swift Fix Mobile Auto, read the documented public record behind the name.</p>
 
-          <ul class="list">
-            <li><strong>Entity:</strong> Swift Fix Mobile Auto LLC</li>
-            <li><strong>Type:</strong> Limited Liability Company (LLC)</li>
-            <li><strong>Jurisdiction:</strong> State of Arizona</li>
-            <li><strong>Organizer / Member:</strong> Jordan James Brunner (per filing documents)</li>
-            <li><strong>Statutory Agent:</strong> As listed in the Arizona Corporation Commission filing</li>
-          </ul>
+<h2>The business</h2>
+<table class="facts">
+  <tr><td>Legal name</td><td>Swift Fix Mobile Auto LLC (Arizona)</td></tr>
+  <tr><td>Owner / member</td><td>Jordan James Brunner (per Arizona Corporation Commission filing, August 2026)</td></tr>
+  <tr><td>Address</td><td>776 W Trellis Rd, Queen Creek, AZ 85140</td></tr>
+  <tr><td>Phone</td><td>(520) 683-4078</td></tr>
+  <tr><td>Previously operated as</td><td>AZ Mobile Auto Repair (Glendale, AZ, since 2020) and AZ Mobile Auto (Anthem, AZ) — same owner</td></tr>
+</table>
 
-          <div class="highlight">
-            <strong>Business lineage note:</strong><br />
-            Public records and historical search results indicate prior use of the name
-            <strong>AZ Mobile Auto Repair</strong> in connection with mobile auto repair services in Arizona.
-            Consumers may encounter both names in search results or historical references.
-          </div>
+<h2>The public record</h2>
+<ul>
+  <li><strong>Cottonwood Police report (May 2017):</strong> Brunner was arrested as the driver who dropped off and picked up the men who burglarized the Hookies N Bookies vape store in Cottonwood — about $15,000 in merchandise taken. This is the 2017 case behind his Yavapai County probation. <em>(Cottonwood PD incident W17005618)</em></li>
+  <li><strong>Cottonwood Police report (October 2018):</strong> cited for stealing his own grandmother's business debit card (Sedona Air Tours) and charging $551.18 — while on probation for the burglary. <em>(Cottonwood PD incident W18013927)</em></li>
+  <li><strong>Yavapai County Sheriff (March 2017):</strong> Brunner admitted to a deputy that he stole his sister's debit card; $213.04 was charged before it was deactivated, and he had offered her $500 to drop the charges. <em>(Incident report 17-007696)</em></li>
+  <li><strong>Maricopa County Sheriff (February 2026):</strong> misdemeanor theft report naming Jordan J. Brunner as the suspect. <em>(Report IR26003144)</em></li>
+  <li><strong>Peoria Municipal Court:</strong> State of Arizona vs. Jordan James Brunner, case M-0750-CT-202200364 — disposition September 2024: failure to comply on civil traffic offenses, with a history of defaults; a registration hold was placed at MVD in March 2026. <em>(azcourts.gov)</em></li>
+  <li><strong>Court records search:</strong> a misdemeanor fraudulent use of a credit card out of Cottonwood Municipal. <em>(Public records search)</em></li>
+</ul>
 
-          <p class="section-title">Official registry links</p>
-          <ul class="link-list">
-            <li>
-              <a href="#" aria-label="Arizona Corporation Commission business search (placeholder)">
-                Arizona Corporation Commission – Business Search (Swift Fix Mobile Auto LLC)
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Historical AZ Mobile Auto Repair listing (placeholder)">
-                Historical listing – AZ Mobile Auto Repair (if available)
-              </a>
-            </li>
-          </ul>
+<h2>Swift Fix Mobile Auto reviews — and the BBB record</h2>
+<p>Swift Fix Mobile Auto's Google listing shows a perfect <strong>5.0 stars — from exactly two reviews</strong>, both posted within weeks of the LLC's formation in August 2026. One comes from an account with no other review history.</p>
+<p>Compare the Better Business Bureau record for the same owner's prior business:</p>
+<ul>
+  <li>BBB lists Jordan Brunner as owner of <strong>AZ Mobile Auto Repair</strong> (Glendale) — not accredited, rated <strong>B-</strong> for failure to respond to a complaint. Its customer-review average on BBB is <strong>1 out of 5 stars</strong>.</li>
+  <li>BBB previously displayed a second profile for this business under its alternate name, <strong>AZ Mobile Auto</strong> (Anthem), rated <strong>F</strong>: 11 complaints filed, failure to respond to all 11. BBB has since removed that profile.</li>
+  <li>BBB's pages also displayed the Glendale business itself at <strong>F</strong> (10 complaints) and <strong>D-</strong> (3 complaints) during 2026 — today it shows B- with a single complaint, and that complaint is still unanswered.</li>
+</ul>
+<p>The earlier displays are documented by dated screenshots in the evidence section below.</p>
 
-          <p class="screenshot-note">
-            Screenshot placeholders: you can insert images here showing the LLC filing and historical search results
-            (e.g., <code>img/acc-filing.png</code>, <code>img/az-mobile-search.png</code>).
-          </p>
-        </div>
-      <div class="evidence">
-  <h4>Evidence</h4>
-  <img src="Screenshot_20250620-173248_Chrome.jpg" alt="AZ Mobile Auto Repair registration info">
-  <img src="Screenshot_20250620-174306_Chrome.jpg" alt="AZ Mobile Auto ACC page">
-  <img src="Screenshot_20251231-092239_Chrome.png" alt="AZSOS AZ Mobile Auto Repair registration">
-  <img src="Screenshot_20260103-165557_Chrome Dev.png" alt="Additional AZ Mobile Auto Repair registration page">
-      </div>
-      </article>
+<h2>The pattern</h2>
+<p><strong>AZ Mobile Auto Repair</strong> (2020, BBB B-) &rarr; <strong>AZ Mobile Auto</strong> (BBB F, 11 complaints) &rarr; <strong>Swift Fix Mobile Auto LLC</strong> (August 2026). Same owner, new business name, reset reviews.</p>
 
-      <!-- Right column: BBB / AG / complaints -->
-      <article class="card">
-        <div class="card-header">
-          <div class="card-title">Ratings, Complaints & Oversight Channels</div>
-          <div class="card-tag">Consumer reference</div>
-        </div>
-        <div class="card-body">
-          <p>
-            Before hiring any auto repair provider, consumers are encouraged to review independent ratings and
-            complaint histories from established oversight organizations.
-          </p>
+<h2>Evidence — the BBB record, as BBB displayed it</h2>
 
-          <p class="section-title">Better Business Bureau (BBB)</p>
-          <div class="danger-box">
-            <strong>Note:</strong> BBB ratings and complaint counts can change over time. Consumers should review the
-            current BBB profile for the most up-to-date information on any business, including Swift Fix Mobile Auto
-            LLC or similarly named entities.
-          </div>
-          <ul class="link-list">
-            <li>
-              <a href="#" aria-label="BBB search for Swift Fix Mobile Auto LLC (placeholder)">
-                BBB search – Swift Fix Mobile Auto LLC
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="BBB search for AZ Mobile Auto Repair (placeholder)">
-                BBB search – AZ Mobile Auto Repair (historical or related entries)
-              </a>
-            </li>
-          </ul>
+<figure>
+  <img src="bbb-anthem-f-11-complaints.jpg" alt="BBB ratings page for AZ Mobile Auto (Anthem) showing an F rating and failure to respond to 11 complaints">
+  <figcaption>BBB ratings overview for "AZ Mobile Auto" (Anthem, AZ): <strong>F</strong> — "Failure to respond to 11 complaint(s) filed against business." Captured 2026. BBB has since removed this profile.</figcaption>
+</figure>
 
-          <p class="section-title">Arizona Attorney General – Consumer Complaints</p>
-          <p>
-            The Arizona Attorney General’s Office accepts consumer complaints related to auto repair, billing,
-            misrepresentation, and other marketplace issues.
-          </p>
-          <ul class="link-list">
-            <li>
-              <a href="#" aria-label="Arizona Attorney General consumer complaint portal (placeholder)">
-                Arizona Attorney General – Consumer Complaint Portal
-              </a>
-            </li>
-          </ul>
+<figure>
+  <img src="bbb-glendale-f-10-complaints.jpg" alt="BBB profile for AZ Mobile Auto Repair (Glendale) showing an F rating and 10 complaints">
+  <figcaption>BBB profile for AZ Mobile Auto Repair (Glendale, AZ) displaying an <strong>F</strong> rating — "Failure to respond to 10 complaint(s)." Captured 2026. The same profile shows B- today.</figcaption>
+</figure>
 
-          <p class="section-title">Additional oversight resources</p>
-          <ul class="link-list">
-            <li>
-              <a href="#" aria-label="Arizona Corporation Commission complaint or inquiry page (placeholder)">
-                Arizona Corporation Commission – Business Inquiry / Complaint
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Local city or county business licensing office (placeholder)">
-                Local city / county business licensing office (for license verification)
-              </a>
-            </li>
-          </ul>
+<figure>
+  <img src="bbb-glendale-d-minus.jpg" alt="BBB profile for AZ Mobile Auto Repair (Glendale) showing a D- rating and 3 unanswered complaints">
+  <figcaption>BBB profile for AZ Mobile Auto Repair displaying a <strong>D-</strong> rating — "Failure to respond to 3 complaint(s)." Captured May 23, 2026.</figcaption>
+</figure>
 
-          <p class="screenshot-note">
-            Screenshot placeholders: BBB rating page, AG complaint portal, and any relevant oversight pages can be
-            added here (e.g., <code>img/bbb-profile.png</code>, <code>img/ag-complaint.png</code>).
-          </p>
-        </div>
-      <div class="evidence">
-  <h4>Evidence</h4>
-  <img src="Screenshot_20250625-133902_Chrome.jpg" alt="BBB F rating with 10 complaints">
-  <img src="Screenshot_20250620-160945_Chrome.jpg" alt="BBB complaints before removal">
-  <img src="Screenshot_20251205-232944_Bing.jpg" alt="Single BBB review">
-      </div>
-      </article>
-    </section>
+<figure>
+  <img src="Screenshot_20250825-084417_Yelp.jpg" alt="Yelp page for the business as captured on August 25, 2025">
+  <figcaption>Yelp, captured August 25, 2025 (archived screenshot).</figcaption>
+</figure>
 
-    <!-- Name piggybacking explanation -->
-    <section class="card">
-      <div class="card-header">
-        <div class="card-title">Business Name Similarity & Consumer Confusion</div>
-        <div class="card-tag">Neutral explanation</div>
-      </div>
-      <div class="card-body">
-        <p>
-          In some cases, new businesses adopt names that are identical or very similar to existing businesses. This
-          can create confusion for consumers, especially when searching online or reading reviews.
-        </p>
+<h2>Verify it yourself</h2>
+<p>Every fact on this page comes from a public record. Check them directly:</p>
+<ul>
+  <li><a href="https://www.bbb.org/us/az/glendale/profile/auto-repair/az-mobile-auto-repair-1126-1000076760">BBB profile — AZ Mobile Auto Repair (Glendale)</a></li>
+  <li><a href="https://apps.azcourts.gov/publicaccess/caselookup.aspx">Arizona Courts — public access case lookup</a> (search: Jordan Brunner)</li>
+  <li>Arizona Corporation Commission — business entity search (search: Swift Fix Mobile Auto LLC; AZ Mobile Auto Repair)</li>
+  <li>Arizona Attorney General — consumer complaint portal (for filing your own complaint)</li>
+</ul>
+<p>Before paying anyone for mobile auto repair: confirm the exact legal business name, check the owner in state filings, read the complaint history — and get the estimate in writing.</p>
 
-        <p>
-          When multiple businesses share or closely mirror a name such as <strong>“Swift Fix Mobile Auto”</strong> or
-          <strong>“AZ Mobile Auto Repair”</strong>, search results, map listings, and review platforms may display
-          overlapping information. Complaints, ratings, or praise intended for one business can appear alongside
-          another with a similar name.
-        </p>
+<footer>
+  <p>This page is a consumer-information compilation of public records — Better Business Bureau profiles, Arizona court records, Cottonwood Police Department and sheriff's reports, and Arizona business filings — prepared for consumers searching for Swift Fix Mobile Auto, Swift Fix Mobile Auto LLC, AZ Mobile Auto Repair, or Jordan Brunner in the Queen Creek, San Tan Valley, Glendale, and Phoenix, Arizona areas. It makes no claim beyond what those records show. Records change; verify current status with the official sources linked above.</p>
+</footer>
 
-        <div class="highlight">
-          <strong>Consumer guidance:</strong><br />
-          Consumers are encouraged to verify:
-          <ul class="list">
-            <li>The exact legal business name as registered with the state</li>
-            <li>The physical or mailing address of the business</li>
-            <li>The owner or managing member listed in public filings</li>
-            <li>Whether reviews and complaints clearly match the specific business they intend to hire</li>
-          </ul>
-        </div>
-
-        <p class="screenshot-note">
-          Screenshot placeholders: side-by-side search results showing similarly named businesses can be added here
-          (e.g., <code>img/search-comparison.png</code>).
-        </p>
-      </div>
-    </section>
-
-    <!-- Verify before you hire checklist -->
-    <section class="card">
-      <div class="card-header">
-        <div class="card-title">“Verify Before You Hire” – Auto Repair Checklist</div>
-        <div class="card-tag">Consumer checklist</div>
-      </div>
-      <div class="card-body">
-        <p>
-          The following checklist is intended to help consumers reduce risk and confusion when selecting a mobile
-          auto repair provider or any auto service business.
-        </p>
-
-        <ul class="list">
-          <li><strong>Confirm the legal name:</strong> Ask for the exact legal business name and compare it to state business registry records.</li>
-          <li><strong>Check the address:</strong> Verify that the address on invoices, websites, and registry filings match.</li>
-          <li><strong>Review ownership information:</strong> Look up the owner or managing member in public filings and confirm consistency.</li>
-          <li><strong>Search multiple sources:</strong> Use search engines, BBB, and state registries to cross-check the business name and owner.</li>
-          <li><strong>Read recent reviews:</strong> Focus on recent, detailed reviews that clearly describe services, locations, and dates.</li>
-          <li><strong>Ask for written estimates:</strong> Request a written estimate and keep copies of all invoices and communications.</li>
-          <li><strong>Verify licensing (if applicable):</strong> Confirm any required local or state licenses for auto repair work.</li>
-          <li><strong>Know your complaint options:</strong> Familiarize yourself with BBB, AG, and local consumer protection channels before hiring.</li>
-        </ul>
-
-        <div class="success-box">
-          <strong>Reminder:</strong><br />
-          This checklist is general consumer guidance and is not specific to any single business. It is intended to
-          help consumers make informed decisions and to reduce confusion when multiple businesses share similar names.
-        </div>
-      </div>
-    </section>
-
-    <!-- Context & neutrality statement -->
-    <section class="card">
-      <div class="card-header">
-        <div class="card-title">Context, Scope & Neutrality Statement</div>
-        <div class="card-tag">Important notice</div>
-      </div>
-      <div class="card-body">
-        <p>
-          This page is intended as a neutral, consumer-protection resource. It summarizes public records, registry
-          data, and general guidance for evaluating auto repair businesses in Arizona. It does not make legal
-          conclusions, does not allege criminal conduct, and does not provide legal advice.
-        </p>
-
-        <p>
-          All references to <strong>Swift Fix Mobile Auto LLC</strong>, <strong>AZ Mobile Auto Repair</strong>, or
-          any individual are based on publicly available information at the time of compilation. Consumers should
-          independently verify current status, ownership, and any changes to business operations.
-        </p>
-
-        <p>
-          If any business owner, consumer, or agency identifies updated information or corrections, they are
-          encouraged to rely on official state records and oversight bodies as the authoritative source.
-        </p>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>
-        This page is provided as a consumer information resource based on public records and neutral guidance. It is
-        not affiliated with any government agency, law firm, or regulatory body.
-      </p>
-      <p>
-        For official information, consumers should consult the Arizona Corporation Commission, the Arizona Attorney
-        General’s Office, the Better Business Bureau, and local licensing authorities.
-      </p>
-      <p class="muted">
-        Last updated: <span>2026-10-13</span> • Host: GitHub Pages (static site)
-      </p>
-    </footer>
-  </div>
+</div>
 </body>
-  </html>
+</html>
