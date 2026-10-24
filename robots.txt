@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cm246043.github.io/swiftfix-mobile-auto-warning/sitemap.xml
