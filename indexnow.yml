@@ -1,0 +1,25 @@
+# Save as .github/workflows/indexnow.yml inside swiftfix-mobile-auto-warning repo
+name: Ping IndexNow on Deploy
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit updated URLs to IndexNow (Bing, DuckDuckGo, Yandex)
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "cm246043.github.io",
+              "key": "ca2ce686a14473a57b34dd06e2ee4620",
+              "keyLocation": "https://cm246043.github.io/swiftfix-mobile-auto-warning/ca2ce686a14473a57b34dd06e2ee4620.txt",
+              "urlList": [
+                "https://cm246043.github.io/swiftfix-mobile-auto-warning/",
+                "https://cm246043.github.io/swiftfix-mobile-auto-warning/timeline.html",
+                "https://cm246043.github.io/swiftfix-mobile-auto-warning/brunner-case.html",
+                "https://cm246043.github.io/swiftfix-mobile-auto-warning/evidence/index.html"
+              ]
+            }'
